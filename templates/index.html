@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <title>BookLibrary</title>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/resources/images/logo1.PNG" alt="BookLibrary logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="signin.html">Sign In</a></li>                 
+                    </ul>
+                </div>
+            </nav>
+        <section class="hero">
+          <div class="content full">
+               <div class="hero-text-box">
+                  <h1>THE PRIME GUIDE FOR FREE EBOOKS.</h1>
+                  <h1>FIND YOUR  NEXT BEST BOOK!</h1>
+                  
+               </div>
+               <div class="signup-prompts">
+                    <form class="new-user" id="welcome-form" 
+                          action="/user_signups/onsite" accept-charset="UTF-8" method="post">
+                        <div class="email-prompts">
+                            <div class="email-feild">
+                                <input class="email-input-feild" href="#" placeholder="Enter your email Address" aria-label="signup with your email address" type="text" name="user[email_address]" id="user_email_address">          
+                              <!-- <input type="submit" href="signup.html" name="commit" value="SIGN UP" class="haml-bub-button partners" id="welcome-submit" onclick="bubEvents.track('Site Conversion, 'submit',{label:'welcome'})" data-disable-with="SIGNUP">-->
+                                <!--<input href="signup.html" type="submit" name="commit" value="SIGN UP" class="haml-bub-button partners" id="welcome-submit" onclick="bubEvents.track('Site Conversion, 'submit',{label:'welcome'})" data-disable-with="SIGNUP">-->
+                                <button type="submit" name="commit" value="SIGN UP" class="haml-bub-button partners" id="welcome-submit"><a href="signin.html">START READING</a></button>
+                               
+                                
+                            </div>                                               
+                        </div>
+                        <div class ="invalid-email-hint" style="display: none;">
+                            "
+                            did you mean
+                            "
+                            <a id = "hint"></a>
+                            "
+                            ?
+                            "
+                        </div>
+                    </form>
+                
+                </div>
+              </div>
+        </section>
+        </header>
+        
+        
+    </body>
+
+</html>

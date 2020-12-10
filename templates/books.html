@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="jquery-ui-1.12.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/r/ju-1.11.4/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#mytable").dataTable();
+                // for dataTable to work, a table should be given an id and must define a thead and tbody
+            });
+        </script>
+
+</head>
+<body>
+    <p>This is the user {{id}}</p>
+    <p>The following are the books he reviewed</p>
+    <table border="1" id="mytable">
+        <thread>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year of Publication</th>
+                <th>Ratings</th>
+            </tr>
+        </thread>
+        <tbody>
+            {% for index,row in rat.iterrows() %}
+            <tr>
+                <td>
+                    {{row['ISBN']}}
+                </td>
+                <td>
+                    {{row['bookTitle']}}
+                </td>
+                <td>
+                    {{row['bookAuthor']}}
+                </td>
+                <td>
+                    {{row['yearOfPublication']}}
+                </td>
+                <td>
+                    {{row['bookRating']}}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form action="recommend" method="POST">
+        <label>Number of Books to Recommend</label>
+          <input type="text" name="noOfBooks">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

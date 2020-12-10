@@ -1,0 +1,361 @@
+/*------------------------------------------------*/
+/*BASIC SETUP*/
+/*------------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+
+}
+html {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*------------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*------------------------------------------------*/
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*------HEADINGS-----*/
+h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color:#fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+}
+
+/* ---------BUTTONS-----
+
+.btn:link,
+.btn:visited {
+      
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #000;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #fff;
+    border: 1px solid #f4f4f4;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ccc;
+    
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #000;
+    
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e67e22;
+    color: #b45656;
+}*/
+     
+/*------------------------------------------------*/
+/*HEADER*/
+/*------------------------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    height: 70px;
+    width: 250px;
+    float: left;
+    margin-top: 20px;  
+    
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+}
+
+.main-nav li a:hover,
+.main-nav li a :active{
+    border-bottom: 2px solid #fff;
+}
+
+/*-------------signup prompts-------*/
+
+
+.hero{
+   
+    background: linear-gradient(0deg, 0xe77e23 0%, #042d41 200%);
+
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+section{
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    height: 480px;
+}
+.content.full {
+    max-width: 1140px;
+}
+.content:last-child {
+    padding-bottom: 40px;
+    margin-bottom: 35px;
+}
+.content:first-child {
+    padding-top: 50px;
+}
+.content {
+    padding: 0 0px 0px;
+    position: relative;
+    margin: 0 auto;
+}
+body {
+    font-size: 14px;
+    line-height: 1.5em;
+    line-height: 1.4;
+    letter-spacing: .1px;
+    color: rgba(255, 255, 255, 0.01);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #162127;
+    background-color: #fff;
+}
+
+.hero.signin-prompts{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.hero form{
+    margin: center;
+    position: absolute;
+    width: 1140px;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+form{
+    display: block;
+}
+.hero form input{
+    height: 45px;
+    width: 40%;
+}
+a,input,label{
+    cursor: pointer;
+}
+input,button,select,textarea{
+    font-family: inherit;
+    
+}
+button, input, optgroup, select, textarea {
+   
+    font: inherit;
+    margin: 0px;
+}
+.hero.signup-prompts.email-prompts{
+    display: flex;
+    justify-content: space-between;
+        
+}
+.hero.signup-prompts.email-prompts.email-feild{
+    flex: 2;
+    margin-right: 0px;
+    position: absolute;
+    
+}
+.hero .signup-prompts .email-prompts .email-field input {
+    width: 100%;
+}
+.hero form .email-input-field {
+    display: inline-block;
+    padding: 0px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #000;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.hero form input {
+    height: 45px;
+}
+input[type="submit" i] {
+    appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+}
+
+element.style {
+}
+.hero .haml-bub-button {
+    height: 45px;
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #000;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.hero form input {
+    height: 45px;
+}
+
+.haml-bub-button.partners {
+    background-color: #F44336;
+    color: rgba(0, 0, 0, 0.7);
+}
+@media screen and (min-width: 440px)
+.haml-bub-button {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-right: 0;
+    color: #fff;
+}
+
+
+.haml-bub-button {
+    
+    position: absolute;
+    
+    justify-content: center;
+    align-items: baseline;
+    color: #fff;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 1em;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.haml-bub-button:link,
+.haml-bub-button:visited {
+    background-color: #fff;
+    border: 1px solid #f4f4f4;
+    margin-right: 15px;
+}
+.haml-bub-button:hover,
+.haml-bub-button:active {
+    border: 1px solid #000;
+    
+    
+}
+
+.hero form .invalid-email-hint {
+    padding-top: 12px;
+    display: none;
+    color: #fff;
+}
+.hero form .invalid-email-hint #hint {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #F44336;
+}
+a {
+    background-color: transparent;
+}
+
